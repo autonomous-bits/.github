@@ -1,0 +1,73 @@
+name: Security Scan
+
+on:
+  workflow_call:
+    inputs:
+      language:
+        description: 'Programming language for CodeQL analysis'
+        required: true
+        type: string
+      node-version:
+        description: 'Node.js version to use'
+        required: false
+        type: string
+        default: '18'
+
+env:
+  NODE_VERSION: ${{ inputs.node-version }}
+
+jobs:
+  security-scan:
+    name: Security Analysis
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      if: ${{ inputs.language == 'javascript' || inputs.language == 'typescript' }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      if: ${{ inputs.language == 'javascript' || inputs.language == 'typescript' }}
+      run: npm ci
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v3
+      with:
+        languages: ${{ inputs.language }}
+        queries: security-extended,security-and-quality
+
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v3
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v3
+      with:
+        category: "/language:${{inputs.language}}"
+
+    - name: Run npm audit
+      if: ${{ inputs.language == 'javascript' || inputs.language == 'typescript' }}
+      run: npm audit --audit-level=moderate
+
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+
+    - name: Upload Trivy scan results
+      uses: github/codeql-action/upload-sarif@v3
+      if: always()
+      with:
+        sarif_file: 'trivy-results.sarif'
