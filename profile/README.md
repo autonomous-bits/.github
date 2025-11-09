@@ -23,12 +23,9 @@ Enable autonomous and semi-autonomous software delivery pipelines that remain tr
 4. **Observability Everywhere** – Measurability is mandatory for safe autonomy.
 5. **Ethical & Secure Defaults** – Guardrails are foundational, not optional.
 
-### 🛠 Use Cases We Target
-- AI-assisted code generation & refactoring with built-in validation gates.
+### 🛠 Use Cases We
 - Autonomous test synthesis and continuous risk scoring.
 - Intelligent release orchestration triggered by quality + business signals.
-- Policy-aware dependency & security hygiene automation.
-- Adaptive performance tuning guided by AI feedback loops.
 
 ### 🤝 Contributing
 We welcome issues, feature proposals, and PRs.
