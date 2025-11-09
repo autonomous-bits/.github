@@ -38,34 +38,10 @@ We welcome issues, feature proposals, and PRs.
 4. Include tests for functional changes.
 5. For larger proposals, open a "Design Discussion" issue first.
 
-### 📚 Resources (Coming Soon)
-- Documentation Portal
-- Architecture Reference Maps
-- AI Agent Integration Guides
-- Roadmap & Milestone Tracker
-
-### 🗺 Roadmap (High-Level)
-| Quarter | Focus Area | Highlights |
-|---------|------------|-----------|
-| Q1 | Foundations | Core SDK, policy engine alpha |
-| Q2 | AI Adapters | Multi-agent orchestration, test synthesis beta |
-| Q3 | Optimization | Telemetry feedback loops, performance heuristics |
-| Q4 | Governance | Compliance automation, trust dashboard |
-
 ### 💬 Community & Support
 - Issues: Use GitHub Issues for bugs & enhancements.
 - Discussions: (Planned) For ideation & Q&A.
 - Security: Report vulnerabilities privately (security policy coming soon).
-
-### 🌱 Fun Facts
-- We prototype with agents before humans touch keyboards—then iterate together.
-- Our naming conventions follow a "factory cell" theme.
-
-### 🏷 License
-All primary repositories will adopt a permissive OSI-approved license (exact choice forthcoming—likely Apache 2.0 or MIT).
-
-### 🙌 Join Us
-If you care about building transparent, reliable AI-powered delivery ecosystems, you're in the right place. Star, fork, and help shape the future of autonomous software creation.
 
 ---
 *Crafting resilient autonomy, one open component at a time.*
