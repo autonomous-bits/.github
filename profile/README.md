@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./autonomous-bits.png" alt="Autonomous Bits logo" width="512"/>
+  <img src="./autonomous-bits.png" alt="Autonomous Bits logo" width="256"/>
 </p>
 
 ## Autonomous Bits 👋
