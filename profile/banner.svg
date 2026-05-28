@@ -30,25 +30,25 @@
   <circle cx="880" cy="320" r="3" fill="#0ea5e9" opacity="0.2" />
 
   <!-- Logo Group (Left-aligned, vertically centered) -->
-  <g transform="translate(100, 85)">
+  <g transform="translate(90, 65)">
     <!-- Glow Effect for Blue Accent Node -->
-    <circle cx="169" cy="85" r="36" fill="#0ea5e9" opacity="0.18" filter="blur(8px)" />
+    <circle cx="171" cy="126" r="54" fill="#0ea5e9" opacity="0.22" filter="blur(8px)" />
     
     <!-- Connections (Lines) -->
-    <line x1="85" y1="85" x2="85" y2="5" stroke="#e1e1e3" stroke-width="10" stroke-linecap="round" />
-    <line x1="85" y1="85" x2="5" y2="135" stroke="#e1e1e3" stroke-width="10" stroke-linecap="round" />
-    <line x1="85" y1="85" x2="169" y2="109" stroke="#e1e1e3" stroke-width="10" stroke-linecap="round" />
+    <line x1="108" y1="108" x2="108" y2="36" stroke="#e1e1e3" stroke-width="13.5" stroke-linecap="round" />
+    <line x1="108" y1="108" x2="36" y2="153" stroke="#e1e1e3" stroke-width="13.5" stroke-linecap="round" />
+    <line x1="108" y1="108" x2="171" y2="126" stroke="#e1e1e3" stroke-width="13.5" stroke-linecap="round" />
     
     <!-- Central Node -->
-    <circle cx="85" cy="85" r="18" fill="#e1e1e3" />
+    <circle cx="108" cy="108" r="25" fill="#e1e1e3" />
     
     <!-- Outer Nodes -->
-    <circle cx="85" cy="5" r="15" fill="#e1e1e3" />
-    <circle cx="5" cy="135" r="15" fill="#e1e1e3" />
+    <circle cx="108" cy="36" r="20" fill="#e1e1e3" />
+    <circle cx="36" cy="153" r="20" fill="#e1e1e3" />
     
     <!-- Sky Blue Accent Node -->
-    <circle cx="169" cy="109" r="22" fill="#0ea5e9" />
-    <circle cx="169" cy="109" r="15" fill="#ffffff" opacity="0.15" />
+    <circle cx="171" cy="126" r="29" fill="#0ea5e9" />
+    <circle cx="171" cy="126" r="20" fill="#ffffff" opacity="0.15" />
   </g>
 
   <!-- Text / Typography Group -->
