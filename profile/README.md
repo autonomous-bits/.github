@@ -1,8 +1,6 @@
-<p align="center">
-  <img src="./autonomous-bits.png" alt="Autonomous Bits logo" />
+<p align="left">
+  <img src="./banner.svg" alt="Autonomous Bits Banner" width="100%" />
 </p>
-
-## Autonomous Bits 👋
 
 Building the next generation of open source tooling for AI-driven software factories.
 
